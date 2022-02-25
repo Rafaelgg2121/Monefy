@@ -75,3 +75,41 @@ platformName, udid, deviceName, systemPort,chromeDriverPort, wdaLocalPort, webki
 
 23. Execute Runner and "mvn test" with parameters
 ================================================
+
+**Automated cases:**
+This cases where automated according to their importance tu run a happy path
+
+Test cases for Monefy
+1-	Validate you can add income
+Steps:
+Access the app monefy, hit ‘Income’, type a number ‘1500’, add a note, then hit choose category, hit ‘Deposits’. 
+Expected results:
+The income will be added to the list of incomes and the chart will show it
+
+2 – Validate you can add expense
+Steps:
+Access the app monefy, hit ‘Expense, type a number ‘500’, add a note, then hit choose category, hit ‘Deposits’. 
+Expected results:
+The expense will be added to the list of incomes and the chart will show it
+3 – validate you can add an expense by directly hitting the icon
+Steps:
+On the main screen, choose the hit the Car figure, you will be prompted to digit quantity and notes, insert 2000 and a note, hit ‘Add car’ icon
+4- try to add an empty income
+Steps:
+On the main screen hit income and then just hit choose category
+Expected results:
+Screen with quantity should blink red and it does not allow you to add the empty income
+5- Confirm that the balance is right
+Steps:
+On the main screen hit ‘Balance’ button, will get a list of everything you have added where:
+ Incomes – Expenses = Balance
+Expected results:
+On this screen we confirm Incomes – Expenses = Balance if incomes > expenses the button will be green, but if Incomes < expenses the button will be red, and the balance will be negative
+6- Confirm search button is working fine
+Steps:
+On the main screen hit the search button, type one of the criteria you have added EG: Eating out
+Expected results:
+You should get the expense on screen with the date you registered it 
+
+
+
